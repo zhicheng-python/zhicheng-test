@@ -20,9 +20,12 @@ mysql:
 #           "charset":"utf8"}
   sql: "SELECT * FROM member WHERE mobile_phone = %s"
 
+  loan_id_sql: "select id from loan order by id desc limit 0,1"
+
 
 excel:
   sheet_name: register
+  sheet_name_invest: invest
   pass_result: PASS
   fail_result: FAIL
 
