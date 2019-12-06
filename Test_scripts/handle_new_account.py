@@ -49,5 +49,5 @@ class CreatNewAccount:
 do_new_user = CreatNewAccount()
 
 if __name__ == '__main__':
-
+    # do_new_user.creat_new_account(reg_name="admin_user",type="0")
     do_new_user.handle_new_user()

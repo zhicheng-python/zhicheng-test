@@ -20,10 +20,10 @@ class HandleParams:
             data = re.sub(r"{no_register_phone}", str(do_phone.get_no_register_phone()), data)
 
         if "{exist_phone}" in data:
-            data = re.sub(r"{exist_phone}", str(do_yaml.read_yaml("loan_user", "手机号", do_path.write_yaml_path)), data)
+            data = re.sub(r"{exist_phone}", str(do_yaml.read_yaml("借款人", "手机号", do_path.write_yaml_path)), data)
 
         if "{exist_pwd}" in data:
-            data = re.sub(r"{exist_pwd}", str(do_yaml.read_yaml("loan_user", "密码", do_path.write_yaml_path)), data)
+            data = re.sub(r"{exist_pwd}", str(do_yaml.read_yaml("借款人", "密码", do_path.write_yaml_path)), data)
 
         return data
 
