@@ -8,7 +8,7 @@ from MyLibs import HTMLTestRunnerNew
 
 from Test_scripts.handle_path import do_path
 
-# from Test_cases.test_01_register import TestrRegister
+from Test_cases.test_01_register import TestrRegister
 from Test_cases.test_05_invest import TestInvest
 from Test_scripts.handle_new_account import do_new_user
 
@@ -27,7 +27,7 @@ class RunAll:
 
         loader=unittest.TestLoader()
 
-        # suite.addTest(loader.loadTestsFromTestCase(TestrRegister))
+        suite.addTest(loader.loadTestsFromTestCase(TestrRegister))
         suite.addTest(loader.loadTestsFromTestCase(TestInvest))
 
 
