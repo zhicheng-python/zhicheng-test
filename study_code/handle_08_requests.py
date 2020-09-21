@@ -42,6 +42,7 @@ class HandleRequest:
             result = self.res.request(method=method, url=url, params=datas,**kwargs)
 
         elif method in ("post", "patch", "delete", "put"):
+            #post、patch 也可以用www form 表单格式数据，所以这里做了个is_json判断，如果请求数据要求格式是json格式就是True
 
             if is_json:
                 result = self.res.request(method=method, url=url, json=datas, **kwargs)
